@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas 1</title>
+    <title>Website SMK KESEHATAN BANDAR LAMPUNG</title>
+    <!--ini adalah style css-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Tugas kuliah 1</h1>
+    <!--ini adalah halaman home-->
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="visimisi.html">Visi dan Misi</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    <!--ini adalah BANNER-->
+    <img src="images/foto3.jpg" alt="foto3" class="banner">
+    <!--ini adalah halaman isi-->
+    <H2 style="text-align: center;">SELAMAT DATANG DI WEBSITE SMK KESEHATAN BANDAR LAMPUNG</H2>
+     <!-- fungsi js -->
+            <script>
+              // fungsi untuk tombol home
+              function home()
+              {
+                  //alihkan ke halaman home
+                  location.href="home.html";
+              }
+              // fungsi ke halaman profil
+              function profil()
+              {                
+                  // window.open("profil.html");
+                  location.href="cv.html";
+              }
+              function visi()
+              {                
+                  // window.open("profil.html");
+                  location.href="contact.html";
+              }
+              function galeri()
+              {                
+                  // window.open("profil.html");
+                  location.href="about.html";
+              }
+          </script>
+    <hr>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2023 SMK KESEHATAN BANDAR LAMPUNG.</p>
+    </footer>
 </body>
 </html>
