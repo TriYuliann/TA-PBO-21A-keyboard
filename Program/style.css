@@ -219,4 +219,31 @@ footer {
   flex-direction: row;
 }
 
-/*Gallery Home*/
+/* Gallery Home */
+
+
+/* Kontak */
+
+.kontak {
+  background-color: skyblue;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.img1 {
+  width: 100px;
+  height: 100px;
+}
+.img2 {
+  width: 120px;
+  height: 120px;
+}
