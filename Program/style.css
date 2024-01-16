@@ -114,7 +114,14 @@ nav ul li a:hover {
 
 /*Berita*/
 .berita-home {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+  background-color: skyblue;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
 }
 .berita-home img{
   width: 500px;
@@ -142,15 +149,74 @@ nav ul li a:hover {
   color: white;
   }
 
-  .berita-home2 {
-    width: 100%;
+  /*Berita checkbox*/
+  .card {
+    background-color: skyblue;
+    color: white;
+    width: 350px;
+    padding: 22px 30px;
+    border-radius: 5px;
+    line-height: 1.8;
   }
-  .berita-home2 img{
-    width: 500px;
-    height: 300px;
-    float: right;
-    margin-right: 10px;
-    margin-left: 10px;
+
+  #ch {
+    display: none;
   }
-  .berita-text2 {
+  
+  .content {
+    display: none;
   }
+
+  #ch:checked ~ .content{
+    display: block;
+  }
+
+  #ch:checked ~ label {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(72,113, 97);
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+  }
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/*Footer*/
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*youtube*/
+.youtube {
+  /*background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9InJnYmEoMCwxMjcsMjI0LDAuNDYpIj48cGF0aCBkPSJNMTIxNC4zMjMgNjYuMDUxaC03OS44NjNsLTcwLjc5MyAxOC4yMjQtNjYuMjg1LTEwLjkzMy04My42NzIgMjIuOTUzLTk3LjYwMS03LjMyOC03My42NjQgMjIuMTI1LTc2Ljk2MSA4LjQ3NS04Mi42NjQtMTMuOTM0LTc2LjkyNiAxMS44MzItOTQuNDUzLTcuNjY2LTkwLjEzNyAxNy4wNTktNzguNjg0LTkuNzMxLTg2LjM2MyAxMy44NzktOTUuNjQ0IDMuMTI1TDAgMTI2LjcxN1YwaDEyODBsLS4wMDEgMzUuODQ0eiIgZmlsbC1vcGFjaXR5PSIuNSIvPjxwYXRoIGQ9Ik0wIDBoMTI4MHYuMDA2bC03MC42NzYgMzYuNTc4LTc0Ljg2MyA0LjY0MS03MC43OTMgMjMuMzM0LTY2LjI4NS0xMS42NzgtODMuNjcyIDI5LjYxOC05Ny42MDItNy4wNy02My42NjQgMjEuNDIxLTc2Ljk2MSAxMi42NDktOTEuNjY0LTIwLjc5OC03Ny45MjYgMTcuNjYtOTQuNDUzLTcuNTc0LTkwLjEzNyAyMS41OTUtNzguNjgzLTkuODg0LTg2LjM2MyAxNi4wNzQtOTUuNjQ1IDYuMjExTDAgMTI3LjkwNXoiLz48L2c+PC9zdmc+);
+  background-size: 100% 100px;*/
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.content-youtube3 {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Gallery Home*/
