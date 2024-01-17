@@ -1,5 +1,6 @@
                                                                        /*LOGO*/
 body {
+  background-color: darkturquoise;
   background-position: center;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -54,8 +55,8 @@ nav ul li a {
 
 nav ul li a:hover {
   border-radius: 50px;
-  background: white;
-  color: black;
+  background: teal;
+  color: sandybrown;
 }
 
                                                               /*HERO IMAGE BANNER*/
@@ -118,7 +119,7 @@ nav ul li a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 10px;
-  background-color: skyblue;
+  background-color: wheat;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 5px;
@@ -130,9 +131,15 @@ nav ul li a:hover {
   margin-right: 10px;
   margin-left: 10px;
 }
+.berita-text {
+  margin: 10px;
+}
+.berita-text2 {
+  margin: 10px;
+}
 
 .btn2 {
-  background-color: #4CAF50; /* Hijau */
+  background-color: teal; /* Hijau */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -145,24 +152,29 @@ nav ul li a:hover {
   border-radius: 20px;
   }
   .btn2:hover{
-  background-color: salmon;
+  background-color: sandybrown;
   color: white;
   }
 
   /*Berita checkbox*/
   .card {
-    background-color: skyblue;
-    color: white;
+    background-color: wheat;
+    color: black;
     width: 350px;
     padding: 22px 30px;
     border-radius: 5px;
     line-height: 1.8;
+    text-align: center;
+  }
+
+  .card i {
+    font-size: 80px;
   }
 
   #ch {
     display: none;
   }
-  
+
   .content {
     display: none;
   }
@@ -172,6 +184,38 @@ nav ul li a:hover {
   }
 
   #ch:checked ~ label {
+    display: none;
+  }
+ /*--------------------------------*/
+  #ch2 {
+    display: none;
+  }
+  
+  .content {
+    display: none;
+  }
+
+  #ch2:checked ~ .content{
+    display: block;
+  }
+
+  #ch2:checked ~ label {
+    display: none;
+  }
+  /*--------------------------------*/
+  #ch3 {
+    display: none;
+  }
+  
+  .content {
+    display: none;
+  }
+
+  #ch3:checked ~ .content{
+    display: block;
+  }
+
+  #ch3:checked ~ label {
     display: none;
   }
 
@@ -204,7 +248,7 @@ footer {
 .youtube {
   /*background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9InJnYmEoMCwxMjcsMjI0LDAuNDYpIj48cGF0aCBkPSJNMTIxNC4zMjMgNjYuMDUxaC03OS44NjNsLTcwLjc5MyAxOC4yMjQtNjYuMjg1LTEwLjkzMy04My42NzIgMjIuOTUzLTk3LjYwMS03LjMyOC03My42NjQgMjIuMTI1LTc2Ljk2MSA4LjQ3NS04Mi42NjQtMTMuOTM0LTc2LjkyNiAxMS44MzItOTQuNDUzLTcuNjY2LTkwLjEzNyAxNy4wNTktNzguNjg0LTkuNzMxLTg2LjM2MyAxMy44NzktOTUuNjQ0IDMuMTI1TDAgMTI2LjcxN1YwaDEyODBsLS4wMDEgMzUuODQ0eiIgZmlsbC1vcGFjaXR5PSIuNSIvPjxwYXRoIGQ9Ik0wIDBoMTI4MHYuMDA2bC03MC42NzYgMzYuNTc4LTc0Ljg2MyA0LjY0MS03MC43OTMgMjMuMzM0LTY2LjI4NS0xMS42NzgtODMuNjcyIDI5LjYxOC05Ny42MDItNy4wNy02My42NjQgMjEuNDIxLTc2Ljk2MSAxMi42NDktOTEuNjY0LTIwLjc5OC03Ny45MjYgMTcuNjYtOTQuNDUzLTcuNTc0LTkwLjEzNyAyMS41OTUtNzguNjgzLTkuODg0LTg2LjM2MyAxNi4wNzQtOTUuNjQ1IDYuMjExTDAgMTI3LjkwNXoiLz48L2c+PC9zdmc+);
   background-size: 100% 100px;*/
-  background-color: white;
+  background-color: wheat;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
@@ -215,8 +259,15 @@ footer {
 }
 
 .content-youtube3 {
-  display: flex;
+  display: block;
   flex-direction: row;
+  justify-content: center;
+}
+.content-youtube2 h2 {
+  text-align: center;
+}
+.content-youtube h2 {
+  text-align: center;
 }
 
 /* Gallery Home */
@@ -233,17 +284,108 @@ footer {
   margin-right: 10px;
   display: flex;
   flex-direction: row;
+  border: 15px solid wheat;
 }
-.icon {
-  display: flex;
+.icon{
   flex-direction: row;
+  margin: 20px;
+}
+.icon h2{
+  text-align: center;
+}
+.icon p{
+  text-align: left;
+}
+.iconi{
+  display: left;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 50px;
 }
 
-.img1 {
-  width: 100px;
-  height: 100px;
+.iconi a {
+  color: black;
 }
-.img2 {
-  width: 120px;
-  height: 120px;
+
+.fb:hover {
+  color: blue;
 }
+.ig:hover {
+  color: salmon;
+}
+.tw:hover {
+  color: skyblue;
+}
+.wa:hover {
+  color:green;
+}
+.yt:hover {
+  color:red;
+}
+                            /*Pendaftaran*/
+.pendaftaran {
+  margin: 20px;
+}
+.pendaftaran img {
+  width: 400px;
+  width: 400px;
+}
+.btn3 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: sandybrown;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.btn3:hover {
+  background-color: white;
+  color: skyblue;
+}
+
+.pdf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Button login/regis*/
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: darkturquoise;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: darkturquoise;
+}
+
+/*visi dan misi logo*/
+
+.visilogo img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  width:200px;clear:both
+}
+
+.visilogo2 img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  width:800px;clear:both
+}
+/*baca selengkapnya*/
