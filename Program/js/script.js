@@ -1,19 +1,4 @@
-//link Home
-document.getElementById("home").addEventListener("click", function() {
-    window.location.href = "index.html";
-});
-document.getElementById("profile1").addEventListener("click", function() {
-    window.location.href = "profile.html";
-});
-document.getElementById("berita1").addEventListener("click", function() {
-    window.location.href = "berita.html";
-});
-document.getElementById("visimisi1").addEventListener("click", function() {
-    window.location.href = "visimisi.html";
-});
-document.getElementById("contact1").addEventListener("click", function() {
-    window.location.href = "contact.html";
-});
+
 
 //--------------------------------------------------------------------------------------
 //link pendaftaran
@@ -53,3 +38,4 @@ document.getElementById("contact1").addEventListener("click", function() {
           document.querySelector('.wj-top-btn').style.display = 'none';
         }
       };
+      

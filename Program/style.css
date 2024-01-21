@@ -388,7 +388,7 @@ footer {
   display:block;
   width:800px;clear:both
 }
-/*baca selengkapnya*/
+/*Top Button*/
 
 img.wj-top-btn {
   display: none;
@@ -408,3 +408,22 @@ img.wj-top-btn:hover {
 html {
   scroll-behavior: smooth;
 }
+
+/*gallery profile*/
+.wj-gallery-box.wj-show-el {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.wj-gallery-box {
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
