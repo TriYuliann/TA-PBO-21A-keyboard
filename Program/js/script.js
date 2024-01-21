@@ -2,7 +2,18 @@
 document.getElementById("home").addEventListener("click", function() {
     window.location.href = "index.html";
 });
-
+document.getElementById("profile1").addEventListener("click", function() {
+    window.location.href = "profile.html";
+});
+document.getElementById("berita1").addEventListener("click", function() {
+    window.location.href = "berita.html";
+});
+document.getElementById("visimisi1").addEventListener("click", function() {
+    window.location.href = "visimisi.html";
+});
+document.getElementById("contact1").addEventListener("click", function() {
+    window.location.href = "contact.html";
+});
 
 //--------------------------------------------------------------------------------------
 //link pendaftaran
@@ -20,7 +31,25 @@ document.getElementById("home").addEventListener("click", function() {
 
 //link Social media icon halaman kontak.html
     //Facebook
-    document.getElementById("icn-fb").addEventListener("click", function() {
-        window.open("https://www.facebook.com/farmasipunyacerita/", "_blank");
-    });
+    //document.getElementById("icn-fb").addEventListener("click", function() {
+      //  window.open("https://www.facebook.com/farmasipunyacerita/", "_blank");
+    //});
     
+    document.querySelector('.wj-top-btn').addEventListener('click', () => {
+        document.querySelector('html').scrollTop = 0;
+      });
+      
+      document.querySelector('.wj-top-btn').addEventListener('mouseover', () => {
+        document.querySelector('.wj-top-btn').classList.add('animated', 'bounce');
+        setTimeout(function () {
+          document.querySelector('.wj-top-btn').classList.remove('animated', 'bounce')
+        }, 1000);
+      });
+
+      window.onscroll = function () {
+        if (document.querySelector('html').scrollTop > 1000) {
+          document.querySelector('.wj-top-btn').style.display = 'block';
+        } else {
+          document.querySelector('.wj-top-btn').style.display = 'none';
+        }
+      };
