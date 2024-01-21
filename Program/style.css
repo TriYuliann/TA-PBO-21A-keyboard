@@ -443,3 +443,37 @@ html {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
+
+.wj-gallery-box3.wj-show-el {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.wj-gallery-box3 {
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.wj-gallery-box4.wj-show-el {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.wj-gallery-box4 {
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
