@@ -13,13 +13,8 @@
     document.getElementById("btn-br2").addEventListener("click", function() {
         window.location.href = "baca-selengkapnya.html";
     });
-
-//link Social media icon halaman kontak.html
-    //Facebook
-    //document.getElementById("icn-fb").addEventListener("click", function() {
-      //  window.open("https://www.facebook.com/farmasipunyacerita/", "_blank");
-    //});
     
+//button top index    
     document.querySelector('.wj-top-btn').addEventListener('click', () => {
         document.querySelector('html').scrollTop = 0;
       });
