@@ -255,6 +255,44 @@
             ["Sukarame", "Marsha Lenathea", "Wanita", "1998-08-08", "SMP Xaverius", "08345678901", "Keperawatan"],
             ["Kedaton", "Azizi Asadel", "Wanita", "2000-10-10", "SMP Fransiskus", "08456789012", "Farmasi"]
         ];
+
+        // event pada saat "btn_tambah" di klik
+        btn_tambah.addEventListener("click", () => {
+            // jika salah satu data input belum diisi
+            if (txt_nama.value == "" || !getSelectedGender() || txt_tanggal.value == "" || txt_asal.value == "" || txt_wa.value == "" || jurusan.value == "" || txt_alamat.value == "") {
+                // tampilkan pesan
+                alert("Lengkapi Seluruh Data !");
+            }
+            // jika seluruh data input sudah diisi
+            else {
+                // isi array dari nilai input
+                data.push([
+                   // generateId(),
+                    txt_alamat.value,
+                    txt_nama.value,
+                    getSelectedGender(),
+                    txt_tanggal.value,
+                    txt_asal.value,
+                    txt_wa.value,
+                    jurusan.value
+                ]);
+
+                // panggil fungsi "viewData"
+                viewData();
+            }
+        });
+
+        // buat fungsi "clearComponent" untuk menghapus isi pada komponen input
+        const clearComponent = () => {
+            txt_nama.value = "";
+            clearGenderSelection();
+            txt_tanggal.value = "";
+            txt_asal.value = "";
+            txt_wa.value = "";
+            jurusan.value = "";
+            txt_alamat.value = "";
+        };
+
     </script>
 
 </body>
