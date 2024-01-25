@@ -125,6 +125,17 @@
 
                 return false
             }
+
+            Swal.fire({
+                    title: "Berhasil kirim pesan",
+                    text: "Sucess",
+                    icon: "success"
+                });
+
+                $('#email').val('')
+                $('#name').val('')
+                $('#message').val('')
+        })
      </script>
 </body>
 </html>
