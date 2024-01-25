@@ -234,5 +234,28 @@
             <th class="frame_table frame_header" style="width: 15%">Jurusan</th>
         </tr>
       </table>
+  
+      <!-- internal js -->
+      <script>
+        // inisialisasi variabel komponen
+        let txt_nama = document.querySelector("#txt_nama");
+        let txt_gender = document.querySelectorAll('input[name="gender"]');
+        let txt_tanggal = document.querySelector("#txt_tanggal");
+        let txt_asal = document.querySelector("#txt_asal");
+        let txt_wa = document.querySelector("#txt_wa");
+        let jurusan = document.querySelector("#jurusan");
+        let txt_alamat = document.querySelector("#txt_alamat");
+        let btn_tambah = document.querySelector("#btn_tambah");
+        let tbl_data = document.querySelector("#tbl_data");
+
+        // inisialisasi variabel untuk menampung array
+        let data = [
+            ["Natar", "Tri Yulian", "Pria", "1990-01-01", "SMP Surgawi", "08123456789", "Farmasi"],
+            ["Jakarta", "Freyanashifa Jayawardana", "Wanita", "1995-05-05", "SMP 1 jakarta", "08234567890", "Teknologi Laboratorium Medis"],
+            ["Sukarame", "Marsha Lenathea", "Wanita", "1998-08-08", "SMP Xaverius", "08345678901", "Keperawatan"],
+            ["Kedaton", "Azizi Asadel", "Wanita", "2000-10-10", "SMP Fransiskus", "08456789012", "Farmasi"]
+        ];
+    </script>
+
 </body>
 </html>
