@@ -109,6 +109,22 @@
     <footer>
         <p>Copyright &copy; 2024 SMK KESEHATAN BANDAR LAMPUNG.</p>
     </footer>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- fungsi js -->
+     <script>
+        $('#contactForm').on('submit', function(e){
+            e.preventDefault()
+
+            if ($('#email').val() == '') {
+                Swal.fire({
+                    title: "Email tidak boleh kosong",
+                    text: "input email wajib diisi",
+                    icon: "warning"
+                });
+
+                return false
+            }
+     </script>
 </body>
 </html>
