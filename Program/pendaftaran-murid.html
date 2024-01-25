@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran</title>
 </head>
 <body>
+    <div>
+      <a href="index.html" class="btn-back">Kembali</a>
+    </div>
+    <div>
+      <h2 style="text-align: center;">Pendaftaran Siswa/Siswi</h2><br>
+    </div>
+      <!-- area component Nama-->
+      <section class="area_component">
+        <!-- area label -->
+        <section class="area_label">
+          <label for="txt_nama">Nama Lengkap</label>
+        </section>
   
+        <!-- area input -->
+        <section class="area_input">
+          <input
+            type="text"
+            name=""
+            id="txt_nama"
+            placeholder="Isi Nama Anda"
+            class="txt_component"
+          />
+        </section>
+      </section>
+    
+       <!-- area component Jenis kelamin-->
+     <section class="area_component">
+        <!-- area label -->
+        <section class="area_label">
+          <label for="txt_gender">Jenis Kelamin</label>
+        </section>
+  
+        <!-- area input -->
+        <section class="area_input">
+          <input
+            type="radio"
+            name="gender"
+            id="pria"
+            value="Pria"  
+        />
+        <label for="pria">Pria</label>
+        <input
+            type="radio"
+            name="gender"
+            id="wanita"
+            value="Wanita"  
+        />
+        <label for="wanita">Wanita</label>
+        </section>
+      </section>
+
+     <!-- area component tempat tanggal lahir-->
+     <section class="area_component">
+        <!-- area label -->
+        <section class="area_label">
+          <label for="txt_tanggal">Tanggal Lahir</label>
+        </section>
+  
+        <!-- area input -->
+        <section class="area_input">
+          <input
+            type="date"
+            name="birthdate"
+            id="txt_tanggal"
+            class="txt_component"
+          />
+        </section>
+      </section>
+
+      <!-- area component -->
+     <section class="area_component">
+        <!-- area label -->
+        <section class="area_label">
+          <label for="txt_asal">Asal Sekolah</label>
+        </section>
+  
+        <!-- area input -->
+        <section class="area_input">
+          <input
+            type="text"
+            name=""
+            id="txt_asal"
+            placeholder="Isi Asal Sekolah"
+            class="txt_component"
+          />
+        </section>
+      </section>
+      
+      <!-- area component -->
+     <section class="area_component">
+        <!-- area label -->
+        <section class="area_label">
+          <label for="txt_wa">Handphone/WA</label>
+        </section>
+  
+        <!-- area input -->
+        <section class="area_input">
+          <input
+            type="text"
+            name="angka"
+            id="txt_wa"
+            placeholder="Isi Nomor Handphone" required
+            class="txt_component"
+            onkeypress="return hanyaAngka(event)"
+          />
+        </section>
+      </section>
+
+      <!-- area component -->
+      <section class="area_component">
+        <!-- area label -->
+        <section class="area_label">
+          <label for="txt_jurusan">Jurusan</label>
+        </section>
+  
+        <!-- area input -->
+        <section class="area_input">
+          <select id="jurusan" name="jurusan">
+            <option value="farmasi">Farmasi</option>
+            <option value="teknologi-laboratorium-medis">Teknologi Laboratorium Medis</option>
+            <option value="keperawatan">Keperawatan</option>
+          </select>
+        </section>
+      </section>
+
+      <!-- area component -->
+     <section class="area_component">
+      <!-- area label -->
+      <section class="area_label">
+        <label for="txt_alamat">Alamat</label>
+      </section>
+
+      <!-- area input -->
+      <section class="area_input">
+        <input
+          type="text"
+          name="alamat"
+          id="txt_alamat"
+          placeholder="Isi Alamat anda" required
+          class="txt_component"
+        />
+      </section>
+    </section>
+
+      <!-- area component -->
+      <section class="area_component">
+        <!-- area tombol -->
+        <button id="btn_tambah" class="btn_component">Tambah Data</button>
+      </section>
 </body>
 </html>
