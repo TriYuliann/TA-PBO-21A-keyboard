@@ -326,7 +326,71 @@
                 // buat kolom untuk data nama
                 content_tabel += `<td class="frame_table">${isi_data[1]}</td>`;
 
-                
+                // tambah kolom untuk data lainnya
+                for (let i = 2; i < isi_data.length; i++) {
+                    content_tabel += `<td class="frame_table">${isi_data[i]}</td>`;
+                }
+
+                // tutup baris isi
+                content_tabel += "</tr>";
+
+                // tambah baris baru (baris_tabel ditambah 1)
+                baris_tabel++;
+            });
+
+            // tampilkan "content_tabel" ke dalam "tbl_data"
+            tbl_data.innerHTML = content_tabel;
+
+            // panggil fungsi "clearComponent"
+            clearComponent();
+        };
+
+        // buat fungsi "removeData" untuk menghapus array berdasarkan index yang dipilih
+        const removeData = (index) => {
+            // jika tombol "Ok" di klik
+            if (
+                confirm(
+                    `Data Mahasiswa : ${data[index][2]} (index ke-${index}) Ingin Dihapus ?`
+                ) == true
+            ) {
+                // hapus array berdasarkan index yang dipilih
+                data.splice(index, 1);
+
+                // panggil fungsi "viewData"
+                viewData();
+            }
+        };
+
+        // buat fungsi "getSelectedGender" untuk mendapatkan jenis kelamin yang dipilih
+        const getSelectedGender = () => {
+            for (let i = 0; i < txt_gender.length; i++) {
+                if (txt_gender[i].checked) {
+                    return txt_gender[i].value;
+                }
+            }
+            return null; // return null if no option is selected
+        };
+
+        // buat fungsi "clearGenderSelection" untuk membersihkan pilihan jenis kelamin
+        const clearGenderSelection = () => {
+            for (let i = 0; i < txt_gender.length; i++) {
+                txt_gender[i].checked = false;
+            }
+        };
+
+        // buat fungsi "generateId" untuk membuat ID sementara
+        const generateId = () => {
+            // generate ID based on timestamp
+            return new Date().getTime().toString();
+        };
+
+        // script js hanya memasukkan angka
+        function hanyaAngka(event) {
+            var angka = (event.which) ? event.which : event.keyCode;
+            if (angka != 46 && angka > 31 && (angka < 48 || angka > 57))
+                return false;
+            return true;
+        }
     </script>
 
 </body>
